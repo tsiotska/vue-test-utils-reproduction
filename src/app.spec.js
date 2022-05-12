@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import App from './App.vue'
-import { Layout } from "ant-design-vue";
+import Layout from "ant-design-vue/es/layout";
 
 
 describe('App', () => {
@@ -10,8 +10,8 @@ describe('App', () => {
       global: {
         plugins: [Layout],
         stubs: {
-          Layout: false
-          // 'a-layout': false
+          // Layout: false
+          //'a-layout': false
         }
       }
     })
